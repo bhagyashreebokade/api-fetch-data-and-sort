@@ -44,7 +44,7 @@ class UsersList extends Component {
                             <td>Email</td>
                         </tr>
                         
-                        {this.state.userList && this.state.userList.map((user) => {
+                        {this.state.userList && this.state.userList.length > 0 && this.state.userList.map((user) => {
                             return(
                                 <tr key={user.id}>
                                     <td>{user.id}</td>
